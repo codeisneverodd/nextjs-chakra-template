@@ -8,13 +8,7 @@ import {
   Text,
   useColorMode
 } from "@chakra-ui/react";
-import {
-  faClock,
-  faCode,
-  faHome,
-  faMoon,
-  faSun
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -81,11 +75,8 @@ function Menu() {
   const router = useRouter();
 
   const menuItems = useRef<
-    { icon: typeof faClock; title: string; href: string }[]
-  >([
-    { icon: faHome, title: "Home", href: "/" },
-    { icon: faCode, title: "Solution Pass", href: "/solution-pass" }
-  ]);
+    { icon: typeof faHome; title: string; href: string }[]
+  >([{ icon: faHome, title: "Home", href: "/" }]);
 
   return (
     <Flex flex="1" justify="end">

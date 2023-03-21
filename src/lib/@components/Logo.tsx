@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ComponentProps } from "react";
-import LogoImg from "profile-512x512.png";
+import LogoImg from "public/profile-512x512.png";
 import { Box } from "@chakra-ui/react";
 
 type LogoProps = {

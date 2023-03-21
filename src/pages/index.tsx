@@ -1,4 +1,5 @@
-import { Center, Text } from "@chakra-ui/react";
+import MainLayout from "@/lib/@components/MainLayout";
+import { Text } from "@chakra-ui/react";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,9 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Center>
-        <Text fontSize="3xl"> Next.js - Chakra UI Template</Text>
-      </Center>
+      <MainLayout title="Home">
+        <Text>New Template</Text>
+      </MainLayout>
     </>
   );
 }
