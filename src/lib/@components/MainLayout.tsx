@@ -23,7 +23,7 @@ export default function MainLayout({
     <>
       <Box>
         <Header />
-        <Box w="full" pos="absolute" pt="100px">
+        <Box w="full" pt="100px">
           {children}
         </Box>
       </Box>
@@ -49,7 +49,6 @@ function Header(props: ComponentProps<typeof Flex>) {
       px="48px"
       alignItems="center"
       gap="40px"
-      position="sticky"
       top="0"
       w="full"
       h="100px"

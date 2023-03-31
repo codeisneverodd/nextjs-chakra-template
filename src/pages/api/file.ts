@@ -10,7 +10,7 @@ export default async function handler(
 ) {
   if (req.method === "GET") {
     try {
-      await fs.readFile(`${jsonDirectory}/solutions.json`, "utf-8");
+      await fs.readFile(`${jsonDirectory}/origin.json`, "utf-8");
       await fs.writeFile(
         `${jsonDirectory}/solutions.json`,
         JSON.stringify({}),
